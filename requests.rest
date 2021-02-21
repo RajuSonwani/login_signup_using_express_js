@@ -1,0 +1,26 @@
+GET http://localhost:8000
+######
+
+GET http://localhost:8000/private
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6Ikt1c3VNIiwiaWF0IjoxNjA0Mzg3NzU1LCJleHAiOjE2MDQzODgxMTV9.QDDJ0BopWXRVXoaXw2baUUP_lGcT5YkYVH47m06Fc-s
+###
+POST http://localhost:8000/signup
+Content-Type: application/json
+
+{
+    "firstName":"Kusum",
+    "secondName":"Sonwani",
+    "gender":"female",
+    "userId":"KusuM",
+    "password":"12@3"
+}
+###
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "userId":"KusuM",
+    "password":"12@3"
+}
